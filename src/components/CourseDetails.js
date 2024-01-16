@@ -1,6 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { getCourseDetails } from '../services/api';
 
-const CourseDetails = ({ course }) => {
+
+const CourseDetails = ({ courseId }) => {
+  
+  const [course, setCourse] = useState([]);
+  
+  useEffect(() => {
+    const fetchCourses = async () => {
+      try {
+        const data = await getCourseDetails(courseId);
+        setCourse(data);
+      } catch (error) {
+        // Handle error as needed
+      }
+    };
+
+    fetchCourses();
+  }, []);
   return (
     <div>
       <h2>Course Details</h2>

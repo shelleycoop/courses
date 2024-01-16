@@ -33,7 +33,7 @@ const CourseList = ({ onCourseClick }) => {
       />
       <ul>
         {filteredCourses.map(course => (
-          <li key={course.id} onClick={() => onCourseClick(course.id)}>
+          <li key={course.id} onClick={() => onCourseClick(course.id)} className="pointer">
             {course.name} - {course.instructor}
           </li>
         ))}

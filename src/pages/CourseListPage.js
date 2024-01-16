@@ -3,7 +3,8 @@ import CourseList from '../components/CourseList';
 
 const CourseListPage = ({ history }) => {
   const handleCourseClick = courseId => {
-    history.push(`/courses/${courseId}`);
+    console.log("working",history )
+    history.push(`/course-details/${courseId}`);
   };
 
   return (
