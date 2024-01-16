@@ -1,0 +1,8 @@
+{
+    "sample-courses": [
+      { "id": 1, "name": "Course A", "instructor": "Instructor A", "description": "Description A", "enrollmentStatus": "Open", "duration": "4 weeks", "schedule": "Monday-Friday", "location": "Online", "prerequisites": "None", "syllabus": "Syllabus A" },
+      { "id": 2, "name": "Course B", "instructor": "Instructor B", "description": "Description B", "enrollmentStatus": "Closed", "duration": "6 weeks", "schedule": "Tuesday-Saturday", "location": "In-Person", "prerequisites": "Basic knowledge of X", "syllabus": "Syllabus B" }
+      
+    ]
+  }
+  
